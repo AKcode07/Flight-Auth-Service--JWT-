@@ -38,3 +38,9 @@ and then execute
 
 `npx sequelize db:migrate`
 ```
+
+To Create Models:
+```
+npx sequelize model:generate --name User --attributes email:String,password:String
+
+```
