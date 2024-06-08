@@ -52,7 +52,7 @@ class UserRepository {
     //         console.log("Something went wrong on repository layer");
     //         throw error;
     //     }
-    }
+    // }
 
     // async isAdmin(userId) {
     //     try {
