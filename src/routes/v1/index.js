@@ -16,10 +16,19 @@ router.post(
     UserController.signIn
 );
 
+router.get(
+    '/isAuthenticated',
+    UserController.isAuthenticated
+);
+
 // router.get(
-//     '/isAuthenticated',
-//     UserController.isAuthenticated
-// );
+//     '/dummy',
+//     (req, res) => {
+//         return res.status(200).json({
+//             message: "OK",
+//         });
+//     }
+// )
 
 // router.get(
 //     '/isAdmin',
