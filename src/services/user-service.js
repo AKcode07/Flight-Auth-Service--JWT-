@@ -1,8 +1,8 @@
-// const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 // const bcrypt = require('bcrypt');
 
 const UserRepository = require('../repository/user-repository');
-// const { JWT_KEY } = require('../config/serverConfig');
+const { JWT_KEY } = require('../config/serverConfig');
 // const AppErrors = require('../utils/error-handler');
 
 class UserService {
@@ -60,25 +60,25 @@ class UserService {
     //     }
     // }
 
-    // createToken(user) {
-    //     try {
-    //         const result = jwt.sign(user, JWT_KEY, {expiresIn: '1d'});
-    //         return result;
-    //     } catch (error) {
-    //         console.log("Something went wrong in token creation");
-    //         throw error;
-    //     }
-    // }
+    createToken(user) {
+        try {
+            const result = jwt.sign(user, JWT_KEY, {expiresIn: '1d'});
+            return result;
+        } catch (error) {
+            console.log("Something went wrong in token creation");
+            throw error;
+        }
+    }
 
-    // verifyToken(token) {
-    //     try {
-    //         const response = jwt.verify(token, JWT_KEY);
-    //         return response;
-    //     } catch (error) {
-    //         console.log("Something went wrong in token validation", error);
-    //         throw error;
-    //     }
-    // }
+    verifyToken(token) {
+        try {
+            const response = jwt.verify(token, JWT_KEY);
+            return response;
+        } catch (error) {
+            console.log("Something went wrong in token validation", error);
+            throw error;
+        }
+    }
 
     // checkPassword(userInputPlainPassword, encryptedPassword) {
     //     try {
