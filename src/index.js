@@ -23,10 +23,10 @@ const prepareAndStartServer = () => {
         // const newToken = service.createToken({ email: 'ashwin@admin.com', id: 1 });
         // console.log("new token is", newToken);
 
-        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzaHdpbkBhZG1pbi5jb20iLCJpZCI6MSwiaWF0IjoxNzE3ODM4Mjg0LCJleHAiOjE3MTc5MjQ2ODR9.MAeEA3fa5EXcXvKTXtLp6HesACpXJropI8ymdRJNiH0";
+        // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzaHdpbkBhZG1pbi5jb20iLCJpZCI6MSwiaWF0IjoxNzE3ODM4Mjg0LCJleHAiOmE3MTc5MjQ2ODR9.MAeEA3fa5EXcXvKTXtLp6HesACpXJropI8ymdRJNiH0";
 
-        const response = service.verifyToken(token);
-        console.log(response);
+        // const response = service.verifyToken(token);
+        // console.log(response);
 
         // if(process.env.DB_SYNC) {
         //     db.sequelize.sync({alter: true});
