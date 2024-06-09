@@ -28,9 +28,9 @@ const prepareAndStartServer = () => {
         // const response = service.verifyToken(token);
         // console.log(response);
 
-        // if(process.env.DB_SYNC) {
-        //     db.sequelize.sync({alter: true});
-        // }
+        if(process.env.DB_SYNC) {
+            db.sequelize.sync({alter: true});
+        }
     });
 }   
 
