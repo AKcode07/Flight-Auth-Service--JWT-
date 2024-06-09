@@ -44,5 +44,5 @@ npx sequelize model:generate --name User --attributes email:String,password:Stri
 
 npx sequelize model:generate --name Role --attributes name:string
 
-
+npx sequelize seed:generate --name add-roles [To add seeders to Roles]
 ```
