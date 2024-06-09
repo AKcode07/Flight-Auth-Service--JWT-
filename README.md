@@ -42,4 +42,7 @@ To Create Models:
 ```
 npx sequelize model:generate --name User --attributes email:String,password:String
 
+npx sequelize model:generate --name Role --attributes name:string
+
+
 ```
