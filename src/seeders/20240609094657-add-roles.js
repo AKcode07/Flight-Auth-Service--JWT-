@@ -12,7 +12,24 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    
+    await queryInterface.bulkInsert('Roles', [
+      {
+        name: 'ADMIN',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'CUSTOMER',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'AIRLINE_BUSINESS',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ], {});
+
   },
 
   async down (queryInterface, Sequelize) {
